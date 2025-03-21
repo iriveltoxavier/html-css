@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 {/* box-level*/
+           background-color: lightgreen;
+           height: 300px;
+           width: 300px;
+           /*simplificando as bordas
+           boder: tamanhao se e solid e cor
+           boder: 10px solid black*/
+           
+           border: 10px solid slateblue;
+           
+           /*podemos simplificar o padding com as seguintes ordem top direita baixo e esquerda e outra e todos padding for igauis so adicionar o valor uma vez so
+           outra coisa se eu adicionar do valores o primeiro fica pra cima e embaixo e o segundo fica pra direita esquerda
+           padding: 10px 20px 10px 10px;*/
+
+          padding: 10px 20px 10px 20px;
+          
+          /* margin tabem podemos simplificar */
+         margin: 10px auto 50px auto;
+         
+         /*outline tabem pode ser simplificado */
+            outline: 5px dashed rgb(125, 250, 114);
+        
+            
+        }
+        a {/*inline-level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px; 
+            /* se quiser mudar a caracteristica de um elmento so colocar display: e o dejejado*/
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de caixas box-level</h1>
+    <p>Paragrafos também são exemplos de box-level, mais os <a href="#"> mais nos links sao Exemplos de caixas  inline-level</a> Vamos ver como tudo isso funciona</p>
+</body>
+</html>

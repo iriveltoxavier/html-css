@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+        color: red; 
+        text-decoration: none;   
+        font-weight: bold;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:hover {
+         text-decoration: underline;   
+         color: black;
+        }
+        a:active {
+            color: yellow;
+        }
+        .especial {
+            background-color: rgba(0, 0, 139, 0.336);
+            color: whitesmoke;
+        }
+        .especial::before {
+            content: ' → ';
+
+        }
+        .especial::after {
+           content: ' ← ' ;
+  
+        }
+         
+    </style>
+</head>
+<body>
+    <h1>Personalizaçao de links</h1>
+    <li><a href="" target="_blank">Link para Github</a></li>
+    <li> <a href="" target="_blank" class="especial">Link parar o youtube</a></li>
+    <li><a href="" target="_blank" class="especial">Link para Facebook</a></li>
+    
+    
+</body> 
+</html>
